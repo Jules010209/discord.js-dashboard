@@ -63,5 +63,5 @@ client.on('interactionCreate', async message => {
     }
 });
 
-// client.login('OTAwNzU0Njc5MDQ1MTY5MjA0.GSi6uK.yXDkba36TPfhYo6qHkwpLEoQZO9bj4V2BrqVUw');
-client.login('OTMxOTc3MzExNDUwOTY4MTQ0.YeMRgg.pmQ0qxYpLz9CPAq_ihBN8kIv9BY');
+// client.login('TOKEN');
+client.login('TOKEN');
