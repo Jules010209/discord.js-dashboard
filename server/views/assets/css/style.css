@@ -1,0 +1,99 @@
+/*
+
+couleur principale
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+#tittlecontener {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  min-height: 200px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: lightgray;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+
+body.dark-mode {
+  background-color: #2c323f;
+  color: #eee;
+}
+
+body.light-mode {
+  background-color: #eee;
+  color: #2c323f;
+}
+/* e47911 */
+
+button {
+  border: none ;
+  text-decoration: none;
+  cursor: pointer;
+  /* transition: .4s ease; */
+  border-radius: 50rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  /* font-family: 'Tapestry', cursive; */
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 1rem;
+}
+
+
+.all_stats_text {
+  font-size: x-large;
+  color:lightgoldenrodyellow;
+  align-items: center
+}
+
+#buttonSwitchMode.dark-mode, #buttonSwitchMenu.dark-mode, #ButtonRefreshGraph.dark-mode  {
+  background-color: #eee;
+  color: black;
+}
+
+#buttonSwitchMode.dark-mode:hover, #buttonSwitchMenu.dark-mode:hover, #ButtonRefreshGraph.dark-mode:hover  {
+  background-color: #E6E6E6;
+  color: black;
+}
+
+#buttonSwitchMode.light-mode, #buttonSwitchMenu.light-mode, #ButtonRefreshGraph.light-mode  {
+  background-color: #3D424D;
+  color: #eee;
+}
+
+#buttonSwitchMode.light-mode:hover, #buttonSwitchMenu.light-mode:hover, #ButtonRefreshGraph.light-mode:hover  {
+  background-color: #2C303A;
+  color: #eee;
+}
+
+/* 
+input{
+  border: none ;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) inset;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'Tapestry', cursive;
+  margin: 1rem;
+}
+input:focus{
+  outline :  solid .2rem #84fab0 ;
+} */

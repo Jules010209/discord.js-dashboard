@@ -1,0 +1,153 @@
+[
+  <ref *1> Client {
+    _events: [Object: null prototype] {      
+      shardDisconnect: [Function (anonymous)]
+    },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    options: {
+      intents: 4611,
+      partials: [Array],
+      presence: [Object],
+      closeTimeout: 5000,
+      waitGuildTimeout: 15000,
+      shardCount: 1,
+      makeCache: [Function (anonymous)],
+      messageCacheLifetime: 0,
+      messageSweepInterval: 0,
+      invalidRequestWarningInterval: 0,
+      restWsBridgeTimeout: 5000,
+      restRequestTimeout: 15000,
+      restGlobalRateLimit: 0,
+      retryLimit: 1,
+      restTimeOffset: 500,
+      restSweepInterval: 60,
+      failIfNotExists: true,
+      userAgentSuffix: [],
+      sweepers: {},
+      ws: [Object],
+      http: [Object],
+      shards: [Array]
+    },
+    rest: RESTManager {
+      client: [Circular *1],
+      handlers: Collection(0) [Map] {},
+      versioned: true,
+      globalLimit: Infinity,
+      globalRemaining: Infinity,
+      globalReset: null,
+      globalDelay: null,
+      sweepInterval: Timeout {
+        _idleTimeout: 60000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 745,
+        _onTimeout: [Function (anonymous)],
+        _timerArgs: undefined,
+        _repeat: 60000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 6,
+        [Symbol(triggerId)]: 1
+      }
+    },
+    _cleanups: Set(1) { [Function: bound ] },
+    _finalizers: FinalizationRegistry {},
+    ws: WebSocketManager {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      gateway: null,
+      totalShards: 1,
+      shards: Collection(0) [Map] {},
+      status: 3,
+      destroyed: false,
+      reconnecting: false,
+      [Symbol(kCapture)]: false
+    },
+    actions: ActionsManager {
+      client: [Circular *1],
+      ChannelCreate: [ChannelCreateAction],
+      ChannelDelete: [ChannelDeleteAction],
+      ChannelUpdate: [ChannelUpdateAction],
+      GuildBanAdd: [GuildBanAdd],
+      GuildBanRemove: [GuildBanRemove],
+      GuildChannelsPositionUpdate: [GuildChannelsPositionUpdate],
+      GuildDelete: [GuildDeleteAction],
+      GuildEmojiCreate: [GuildEmojiCreateAction],
+      GuildEmojiDelete: [GuildEmojiDeleteAction],
+      GuildEmojiUpdate: [GuildEmojiUpdateAction],
+      GuildEmojisUpdate: [GuildEmojisUpdateAction],
+      GuildIntegrationsUpdate: [GuildIntegrationsUpdate],
+      GuildMemberRemove: [GuildMemberRemoveAction],
+      GuildMemberUpdate: [GuildMemberUpdateAction],
+      GuildRoleCreate: [GuildRoleCreate],
+      GuildRoleDelete: [GuildRoleDeleteAction],
+      GuildRoleUpdate: [GuildRoleUpdateAction],
+      GuildRolesPositionUpdate: [GuildRolesPositionUpdate],
+      GuildScheduledEventCreate: [GuildScheduledEventCreateAction],
+      GuildScheduledEventDelete: [GuildScheduledEventDeleteAction],
+      GuildScheduledEventUpdate: [GuildScheduledEventUpdateAction],
+      GuildScheduledEventUserAdd: [GuildScheduledEventUserAddAction],
+      GuildScheduledEventUserRemove: [GuildScheduledEventUserRemoveAction],
+      GuildStickerCreate: [GuildStickerCreateAction],
+      GuildStickerDelete: [GuildStickerDeleteAction],
+      GuildStickerUpdate: [GuildStickerUpdateAction],
+      GuildStickersUpdate: [GuildStickersUpdateAction],
+      GuildUpdate: [GuildUpdateAction],
+      InteractionCreate: [InteractionCreateAction],
+      InviteCreate: [InviteCreateAction],
+      InviteDelete: [InviteDeleteAction],
+      MessageCreate: [MessageCreateAction],
+      MessageDelete: [MessageDeleteAction],
+      MessageDeleteBulk: [MessageDeleteBulkAction],
+      MessageReactionAdd: [MessageReactionAdd],
+      MessageReactionRemove: [MessageReactionRemove],
+      MessageReactionRemoveAll: [MessageReactionRemoveAll],
+      MessageReactionRemoveEmoji: [MessageReactionRemoveEmoji],
+      MessageUpdate: [MessageUpdateAction],
+      PresenceUpdate: [PresenceUpdateAction],
+      StageInstanceCreate: [StageInstanceCreateAction],
+      StageInstanceDelete: [StageInstanceDeleteAction],
+      StageInstanceUpdate: [StageInstanceUpdateAction],
+      ThreadCreate: [ThreadCreateAction],
+      ThreadDelete: [ThreadDeleteAction],
+      ThreadListSync: [ThreadListSyncAction],
+      ThreadMemberUpdate: [ThreadMemberUpdateAction],
+      ThreadMembersUpdate: [ThreadMembersUpdateAction],
+      TypingStart: [TypingStart],
+      UserUpdate: [UserUpdateAction],
+      VoiceStateUpdate: [VoiceStateUpdate],
+      WebhooksUpdate: [WebhooksUpdate]
+    },
+    voice: ClientVoiceManager { adapters: Map(0) {} },
+    shard: null,
+    users: UserManager {},
+    guilds: GuildManager {},
+    channels: ChannelManager {},
+    sweepers: Sweepers { options: {}, intervals: [Object] },
+    presence: ClientPresence {
+      userId: null,
+      guild: null,
+      status: 'idle',
+      activities: [Array],
+      clientStatus: null
+    },
+    user: null,
+    application: null,
+    readyAt: null,
+    [Symbol(kCapture)]: false
+  }
+]
+DASHBOARD IN http://localhost:52102/?client=
+ *  Bot was connected !
+
+
+
+
+
+
+
+
+

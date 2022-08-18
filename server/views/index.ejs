@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/views/assets/css/style.css">
+</head>
+<body id="body" >
+    <button name="dark_light" id="buttonSwitchMode"  title="Toggle dark/light mode">light-mode🌞</button>
+
+    <div class="presence">
+        <p>
+            <%= presence.activities[0].type ? presence.activities[0].type : null %> : <%= presence.activities[0].url ? presence.activities[0].url : null %>
+        </p>
+    </div>
+
+    <div class="graphBox">
+        <div style="width: 600px; height: 700px;" class="box">
+            <button name="stats-graph" id="buttonSwitchMenu"  title="Toggle menu mode">Switch To Text</button>
+            <button name="stats-graph" id="ButtonRefreshGraph"  title="Toggle menu mode">Refresh Graph</button>
+            <div class="all_stats_text"></div>
+        </div>
+
+        <div style="width: 300px;" class="box guilds">
+            <h1>Guilds</h1>
+
+            <% Client.guilds.cache.forEach(element => { %>
+                <h2><li><%= element.name %></li></h2>
+            <% }); %>
+        </div>
+        
+        <div style="width: 500px;" class="box">
+            
+        </div>
+
+        <div style="width: 500px;" class="box">
+            
+        </div>
+    </div>
+
+    <script>
+        let users_func = <%= Client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) %>;
+        let guilds_func = <%= Client.guilds.cache.size %>;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.2/dist/chart.min.js"></script>
+    <script src="/views/assets/js/mode-switch.js"></script>
+    <script src="/views/assets/js/charts.js"></script>
+    <script src="/views/assets/js/all-switch.js"></script>
+    <script src="/views/assets/js/refresh-graph.js"></script>
+    <script src="/views/assets/js/theme-loader.js"></script>
+
+    <%- include('./includes/footer.ui.ejs') %>
+</body>
+</html>
