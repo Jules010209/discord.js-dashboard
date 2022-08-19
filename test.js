@@ -10,7 +10,7 @@ const commands = [{
     description: 'Replies with Pong!'
 }];
 
-const rest = new REST({ version: '9' }).setToken('OTMxOTc3MzExNDUwOTY4MTQ0.YeMRgg.pmQ0qxYpLz9CPAq_ihBN8kIv9BY');
+const rest = new REST({ version: '9' }).setToken('TOKEN');
 
 const client = new Client({
     intents: [
