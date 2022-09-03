@@ -54,6 +54,7 @@ client.once('ready', () => {
 
 client.on('interactionCreate', async message => {
     if(!message.isCommand()) return;
+    
     if(message.commandName === 'ping') {
         await message.reply({ content: 'pong' });
 
